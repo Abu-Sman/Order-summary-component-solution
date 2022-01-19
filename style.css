@@ -1,0 +1,192 @@
+/************************/
+/* GENERAL STYLES */
+/************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  color: #7280a7;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+main {
+  background-image: linear-gradient(
+      rgba(224, 232, 255, 0.1),
+      rgba(224, 232, 255, 1)
+    ),
+    url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  width: 150rem;
+  height: 80rem;
+  margin: 5rem auto;
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-summary-component {
+  background-color: #fff;
+  width: 40rem;
+  height: 60rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+}
+
+.text-box {
+  font-size: 1.6rem;
+  padding: 4.8rem;
+  text-align: center;
+}
+
+.text-title {
+  font-size: 2.4rem;
+  color: #1f2f56;
+  font-weight: 900;
+  margin-bottom: 2.4rem;
+}
+
+.text-description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.plan-selection-box {
+  background-color: #f5f7ff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-1 {
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.plan-type-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-type {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.link:link,
+.link:visited {
+  display: block;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.plan-change-link:link,
+.plan-change-link:visited {
+  color: #3829e0;
+  font-size: 1.2rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid currentColor;
+}
+
+.plan-change-link:hover,
+.plan-change-link:active {
+  border-bottom: 0.1rem solid #f5f7ff;
+  color: #887fec;
+}
+
+.btn-link:link,
+.btn-link:visited {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2.4rem;
+  box-shadow: 0 3.2rem 3.2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-link:hover,
+.btn-link:active {
+  background-color: #887fec;
+}
+
+.cancel-order-link:link,
+.cancel-order-link:visited {
+  display: inline-block;
+  color: inherit;
+}
+
+.cancel-order-link:hover,
+.cancel-order-link:active {
+  color: #1f2f56;
+}
+
+/************************/
+/* MEDIA QUERIES */
+/************************/
+/* FOR DESKTOP: 1500PX */
+@media (max-width: 94em) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+}
+
+/* FOR TABLET: 900PX */
+@media (max-width: 55em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* FOR MOBILE:  450PX*/
+@media (max-width: 28em) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    background-image: linear-gradient(
+        rgba(224, 232, 255, 0.1),
+        rgba(224, 232, 255, 1)
+      ),
+      url(./images/pattern-background-mobile.svg);
+  }
+}
